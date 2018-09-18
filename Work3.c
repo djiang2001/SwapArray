@@ -18,8 +18,10 @@ int main(){
 
   //Second Array
   int arr2[10];
+  int * p1 = arr;
+  int * p2 = arr2;
   for(i = 9;i>=0; i--){
-    *(arr2 + i) = *(arr + (9-i));
+    *(p2 + i) = *(p1 + (9-i));
   }
 
     for(i = 0; i < 10; i++){
